@@ -28,7 +28,7 @@ else
 	npm install oojs || exit 1
 fi
 
-OOJS_VERSION=$(node -e 'console.log(require("./node_modules/oojs/package.json").version);')
+OOJS_VERSION=$(nodejs -e 'console.log(require("./node_modules/oojs/package.json").version);')
 if [ "$OOJS_VERSION" == "" ]
 then
 	echo 'Could not find OOjs version'
