@@ -2,3 +2,14 @@ body {
 	font-size: 100%;
 	font-family: sans-serif;
 }
+.rightBar {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.actionButtons {
+	float: right;
+	font-size: 0.8em;
+	vertical-align: top;
+	padding: 0.25em;
+}
