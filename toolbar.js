@@ -37,7 +37,7 @@ function createTool( toolbar, group, name, icon, title, init, onSelect ) {
 toolbar.setup( [
 	{
 		type: 'bar',
-		include: [ { group: 'firstTools' } ]
+		include: [ { group: 'barTools' } ]
 	},
 	{
 		type: 'list',
@@ -81,10 +81,10 @@ toolFactory.register( createTool( toolbar, 'barTools', 'barTool', 'picture', 'Th
 toolFactory.register( createTool( toolbar, 'barTools', 'disabledBarTool', 'picture', 'Basic tool in bar disabled', function () { this.setDisabled( true ); } ) );
 toolFactory.register( createTool( toolbar, 'listTools', 'listTool', 'picture', 'First basic tool in list' ) );
 toolFactory.register( createTool( toolbar, 'listTools', 'listTool1', 'picture', 'Basic tool in list' ) );
-toolFactory.register( createTool( toolbar, 'moreListTools', 'listTool2', 'picture', 'Another basic tool' ) );
+toolFactory.register( createTool( toolbar, 'listTools', 'listTool2', 'picture', 'Another basic tool' ) );
 toolFactory.register( createTool( toolbar, 'listTools', 'listTool3', 'picture', 'Basic disabled tool in list', function () { this.setDisabled( true ); } ) );
-toolFactory.register( createTool( toolbar, 'moreListTools', 'listTool4', 'picture', 'More basic tools' ) );
-toolFactory.register( createTool( toolbar, 'moreListTools', 'listTool5', 'picture', 'And even more' ) );
+toolFactory.register( createTool( toolbar, 'listTools', 'listTool4', 'picture', 'More basic tools' ) );
+toolFactory.register( createTool( toolbar, 'listTools', 'listTool5', 'picture', 'And even more' ) );
 toolFactory.register( createTool( toolbar, 'listTools', 'listTool6', 'picture', 'A final tool' ) );
 
 toolFactory.register( createTool( toolbar, 'autoDisableListTools', 'autoDisableListTool', 'picture', 'Click to disable this tool', null, function () { this.setDisabled( true ); } ) );
